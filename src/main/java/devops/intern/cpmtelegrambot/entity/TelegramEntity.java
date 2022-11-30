@@ -18,8 +18,8 @@ public class TelegramEntity {
     @Column(name = "id", nullable = false)
     private Long id;
 
-    @Column(name = "is_boot")
-    private Boolean isBoot;
+    @Column(name = "is_bot")
+    private Boolean isBot;
 
     private String firstname;
     private String username;
@@ -31,4 +31,5 @@ public class TelegramEntity {
     private String languageCode;
     @Column(name = "is_active")
     private Boolean isActive;
+    private Integer step;
 }
