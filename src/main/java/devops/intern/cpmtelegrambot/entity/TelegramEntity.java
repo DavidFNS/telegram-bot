@@ -10,7 +10,8 @@ import javax.persistence.*;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class TelegramUser {
+@Table(name = "telegram")
+public class TelegramEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "telegram_user_gen")
     @SequenceGenerator(name = "telegram_user_gen", sequenceName = "telegram_user_seq", allocationSize = 1)
